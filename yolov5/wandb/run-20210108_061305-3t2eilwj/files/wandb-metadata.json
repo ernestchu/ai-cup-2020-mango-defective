@@ -1,0 +1,37 @@
+{
+    "os": "Linux-3.10.0-1062.18.1.el7.x86_64-x86_64-with-centos-7.7.1908-Core",
+    "python": "3.6.8",
+    "heartbeatAt": "2021-01-07T22:13:07.735358",
+    "startedAt": "2021-01-07T22:13:05.180602",
+    "docker": null,
+    "gpu": "Tesla P100-PCIE-16GB",
+    "gpu_count": 1,
+    "cpu_count": 48,
+    "cuda": "10.0.130",
+    "args": [
+        "--img",
+        "640",
+        "--batch",
+        "28",
+        "--epochs",
+        "20",
+        "--data",
+        "./data/mango.yaml",
+        "--cfg",
+        "./models/yolov5l.yaml",
+        "--weights",
+        "yolov5l.pt"
+    ],
+    "state": "running",
+    "codePath": "train.py",
+    "program": "train.py",
+    "git": {
+        "remote": "https://github.com/ultralytics/yolov5",
+        "commit": "fea9c9b80c5c0f73f66b93cd10003b9500452579"
+    },
+    "email": "b073040018@student.nsysu.edu.tw",
+    "root": "/home/b073040018/Machine_Learning/Mango/yolov5",
+    "host": "hadoop0",
+    "username": "b073040018",
+    "executable": "/usr/bin/python3"
+}

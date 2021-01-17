@@ -1,0 +1,39 @@
+Scanning '../mango_data/labels/Train.cache' for images and labels... 25768 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████████████████████████████████| 25768/25768 [00:00<?, ?it/s]Scanning '../mango_data/labels/Train.cache' for images and labels... 25768 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████████████████████████████████| 25768/25768 [00:00<?, ?it/s]
+Scanning '../mango_data/labels/Dev.cache' for images and labels... 3681 found, 0 missing, 0 empty, 0 corrupted: 100%|███████████████████████████████████████████| 3681/3681 [00:00<?, ?it/s]Scanning '../mango_data/labels/Dev.cache' for images and labels... 3681 found, 0 missing, 0 empty, 0 corrupted: 100%|███████████████████████████████████████████| 3681/3681 [00:00<?, ?it/s]
+Plotting labels... 
+Images sizes do not match. This will causes images to be display incorrectly in the UI.
+
+Analyzing anchors... anchors/target = 5.24, Best Possible Recall (BPR) = 1.0000
+Image sizes 640 train, 640 test
+Using 8 dataloader workers
+Logging results to runs/train/exp2
+Starting training for 5 epochs...
+
+     Epoch   gpu_mem       box       obj       cls     total   targets  img_size
+  0%|                                                                                                                                                               | 0/403 [00:00<?, ?it/s]  0%|                                                                                                                                                               | 0/403 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "train.py", line 520, in <module>
+    train(hyp, opt, device, tb_writer, wandb)
+  File "train.py", line 292, in train
+    pred = model(imgs)  # forward
+  File "/home/b073040018/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/b073040018/Machine_Learning/Mango/yolov5/models/yolo.py", line 119, in forward
+    return self.forward_once(x, profile)  # single-scale inference, train
+  File "/home/b073040018/Machine_Learning/Mango/yolov5/models/yolo.py", line 135, in forward_once
+    x = m(x)  # run
+  File "/home/b073040018/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/b073040018/Machine_Learning/Mango/yolov5/models/common.py", line 86, in forward
+    return self.cv3(torch.cat((self.m(self.cv1(x)), self.cv2(x)), dim=1))
+  File "/home/b073040018/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/b073040018/Machine_Learning/Mango/yolov5/models/common.py", line 36, in forward
+    return self.act(self.bn(self.conv(x)))
+  File "/home/b073040018/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/b073040018/.local/lib/python3.6/site-packages/torch/nn/modules/activation.py", line 394, in forward
+    return F.silu(input, inplace=self.inplace)
+  File "/home/b073040018/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 1741, in silu
+    return torch._C._nn.silu(input)
+RuntimeError: CUDA out of memory. Tried to allocate 500.00 MiB (GPU 0; 15.90 GiB total capacity; 14.14 GiB already allocated; 182.38 MiB free; 14.63 GiB reserved in total by PyTorch)

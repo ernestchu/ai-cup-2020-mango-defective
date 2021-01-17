@@ -1,0 +1,292 @@
+2021-01-08 06:17:18,845 INFO    MainThread:7671 [internal.py:wandb_internal():63] W&B internal server running at pid: 7671
+2021-01-08 06:17:18,849 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: check_version
+2021-01-08 06:17:18,850 INFO    WriterThread:7671 [datastore.py:open_for_write():76] open: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/run-128df853.wandb
+2021-01-08 06:17:18,852 DEBUG   SenderThread:7671 [sender.py:send():90] send: header
+2021-01-08 06:17:18,853 DEBUG   SenderThread:7671 [sender.py:send():90] send: request
+2021-01-08 06:17:18,853 DEBUG   SenderThread:7671 [sender.py:send_request():99] send_request: check_version
+2021-01-08 06:17:18,858 DEBUG   Thread-4  :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): pypi.org:443
+2021-01-08 06:17:19,382 DEBUG   Thread-4  :7671 [connectionpool.py:_make_request():393] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 52216
+2021-01-08 06:17:19,560 DEBUG   SenderThread:7671 [sender.py:send():90] send: run
+2021-01-08 06:17:19,582 INFO    SenderThread:7671 [sender.py:_maybe_setup_resume():281] checking resume status for None/YOLOv5/128df853
+2021-01-08 06:17:19,587 DEBUG   SenderThread:7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-08 06:17:19,830 DEBUG   SenderThread:7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-08 06:17:19,835 INFO    SenderThread:7671 [sender.py:_maybe_setup_resume():339] configured resuming with: {'step': 71, 'history': 71, 'events': 385, 'output': 60, 'runtime': 1762, 'summary': {'x/lr2': 0.00476393202250021, 'train/box_loss': 0.0602407269179821, 'metrics/mAP_0.5': 0.1751404691018719, 'metrics/mAP_0.5:0.95': 0.052987218279650194, '_timestamp': 1610057769, 'train/obj_loss': 0.021149197593331337, '_step': 70, 'x/lr0': 0.00476393202250021, 'Labels': {'width': 2000, 'format': 'jpg', 'height': 2000, 'captions': ['labels_correlogram.jpg', 'labels.jpg'], '_type': 'images/separated', 'count': 2}, 'Validation': {'captions': ['test_batch0_labels.jpg', 'test_batch0_pred.jpg', 'test_batch1_labels.jpg', 'test_batch1_pred.jpg', 'test_batch2_labels.jpg', 'test_batch2_pred.jpg'], '_type': 'images/separated', 'count': 6, 'width': 1280, 'format': 'jpg', 'height': 732}, 'Mosaics': {'_type': 'images/separated', 'count': 3, 'width': 1280, 'format': 'jpg', 'height': 1280, 'captions': ['train_batch0.jpg', 'train_batch1.jpg', 'train_batch2.jpg']}, '_runtime': 1755, 'metrics/recall': 0.2531816965571446, 'val/cls_loss': 0.01310756802558899, 'val/obj_loss': 0.017244966700673103, 'train/cls_loss': 0.013488918542861938, 'metrics/precision': 0.152044085326808, 'x/lr1': 0.00476393202250021, 'Images': {'height': 384, 'captions': ['00002.jpg', '30188.jpg', '30189.jpg', '30213.jpg', '30222.jpg', '30239.jpg', '30264.jpg', '30271.jpg', '30280.jpg', '30286.jpg', '30297.jpg', '30316.jpg', '30326.jpg', '30330.jpg', '30346.jpg', '30370.jpg'], 'all_boxes': [{'predictions': {'path': 'media/metadata/boxes2D/Images_54_00.boxes2D.json', 'size': 14752, '_type': 'boxes2D', 'sha256': '32f405211ad9e54fc65c5f401de52b94c096e19da65fbb582d281eefc16341d9'}}, {'predictions': {'path': 'media/metadata/boxes2D/Images_54_10.boxes2D.json', 'size': 12372, '_type': 'boxes2D', 'sha256': '9bf6f493511271584893ffa19ef552c50de2fb7f34268aa86c9c7b72e92ac207'}}, {'predictions': {'path': 'media/metadata/boxes2D/Images_54_20.boxes2D.json', 'size': 23187, '_type': 'boxes2D', 'sha256': '929ee978635f94fa605bc6fe08a5bc0f2c977f32d95bcabfc5f27b4ac82d9071'}}, {'predictions': {'sha256': '44cb9016043d484031557d39a7b5036873c3ac4a0b8fd111edff8e3179ed9d79', 'path': 'media/metadata/boxes2D/Images_54_30.boxes2D.json', 'size': 23375, '_type': 'boxes2D'}}, {'predictions': {'_type': 'boxes2D', 'sha256': '40040f7ba63e039a47d0b45572ece4daa3065ced8f6b5a1e880e8e8761b55a3c', 'path': 'media/metadata/boxes2D/Images_54_40.boxes2D.json', 'size': 7033}}, {'predictions': {'path': 'media/metadata/boxes2D/Images_54_50.boxes2D.json', 'size': 34620, '_type': 'boxes2D', 'sha256': '94349a94c144a3555fe1545d3b106d58e210ad6d4a92181507abc36ac9e84d4f'}}, {'predictions': {'path': 'media/metadata/boxes2D/Images_54_60.boxes2D.json', 'size': 3470, '_type': 'boxes2D', 'sha256': '96f3b744c4bee118f6dd43774d2e37ae18a53a2c87e77c830faf4d5c399fc2d5'}}, {'predictions': {'path': 'media/metadata/boxes2D/Images_54_70.boxes2D.json', 'size': 16762, '_type': 'boxes2D', 'sha256': '47e4418570e0db997128b2e1de1cc4ecfa888882fdf6971392f7362d58e126be'}}, {'predictions': {'path': 'media/metadata/boxes2D/Images_54_80.boxes2D.json', 'size': 13486, '_type': 'boxes2D', 'sha256': '9e20b42c8151b48c031a9a489a39717e984d1b08c8b2ac6c3a347d6662502713'}}, {'predictions': {'_type': 'boxes2D', 'sha256': 'd99fd65fedd4eff8b62b838fc239098f9fcfcb4fc7f34353c47754690d4cd6d4', 'path': 'media/metadata/boxes2D/Images_54_90.boxes2D.json', 'size': 21760}}, {'predictions': {'path': 'media/metadata/boxes2D/Images_54_100.boxes2D.json', 'size': 23673, '_type': 'boxes2D', 'sha256': '0942e2ebb31ec1e0145278ee037876449be5c5fe0956c8446198f32b7e5c9ecc'}}, {'predictions': {'path': 'media/metadata/boxes2D/Images_54_110.boxes2D.json', 'size': 29879, '_type': 'boxes2D', 'sha256': 'f3d2003445730e15dbd24224f5f93bf5e80dd85e54e50cfdfb00fa717a056939'}}, {'predictions': {'sha256': '283960e8b934a0eecff0302fbe75dae1a6bc9f0193f4b9d2c1e5583a5ffbd1be', 'path': 'media/metadata/boxes2D/Images_54_120.boxes2D.json', 'size': 11210, '_type': 'boxes2D'}}, {'predictions': {'size': 3866, '_type': 'boxes2D', 'sha256': '2df8d40084c43257f3a08e999c2682476c433dbada5c062a4201ca7d4472caf7', 'path': 'media/metadata/boxes2D/Images_54_130.boxes2D.json'}}, {'predictions': {'size': 6132, '_type': 'boxes2D', 'sha256': '6452f5c68d9f871ad96fcdb5294c70b952c2cc66680c5c6b308a1ed4503b4518', 'path': 'media/metadata/boxes2D/Images_54_140.boxes2D.json'}}, {'predictions': {'path': 'media/metadata/boxes2D/Images_54_150.boxes2D.json', 'size': 17043, '_type': 'boxes2D', 'sha256': '261be599da396e7f6a3b922394d659314bf545cbdcb929acc69a6b018c0c9546'}}], '_type': 'images/separated', 'count': 16, 'width': 672, 'format': 'png'}, 'Results': {'_type': 'images/separated', 'count': 3, 'width': 2400, 'format': 'png', 'height': 1200, 'captions': ['results.png', 'precision_recall_curve.png', 'confusion_matrix.png']}, 'val/box_loss': 0.060614753514528275}, 'config': {'cfg': {'desc': None, 'value': './models/yolov5s.yaml'}, 'hyp': {'desc': None, 'value': {'box': 0.05, 'cls': 0.5, 'lr0': 0.01, 'lrf': 0.2, 'obj': 1, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'iou_t': 0.2, 'mixup': 0, 'scale': 0.5, 'shear': 0, 'cls_pw': 1, 'fliplr': 0.5, 'flipud': 0, 'mosaic': 1, 'obj_pw': 1, 'degrees': 0, 'anchor_t': 4, 'fl_gamma': 0, 'momentum': 0.937, 'translate': 0.1, 'perspective': 0, 'weight_decay': 0.001, 'warmup_epochs': 3, 'warmup_bias_lr': 0.1, 'warmup_momentum': 0.8}}, 'adam': {'desc': None, 'value': False}, 'data': {'desc': None, 'value': './data/mango.yaml'}, 'name': {'desc': None, 'value': 'exp'}, 'quad': {'desc': None, 'value': False}, 'rect': {'desc': None, 'value': False}, '_wandb': {'desc': None, 'value': {'framework': 'torch', 'cli_version': '0.10.12', 'is_jupyter_run': False, 'python_version': '3.6.8', 'is_kaggle_kernel': False}}, 'bucket': {'desc': None, 'value': ''}, 'device': {'desc': None, 'value': ''}, 'epochs': {'desc': None, 'value': 20}, 'evolve': {'desc': None, 'value': False}, 'nosave': {'desc': None, 'value': False}, 'notest': {'desc': None, 'value': False}, 'resume': {'desc': None, 'value': False}, 'project': {'desc': None, 'value': 'runs/train'}, 'sync_bn': {'desc': None, 'value': False}, 'weights': {'desc': None, 'value': 'yolov5s.pt'}, 'workers': {'desc': None, 'value': 8}, 'exist_ok': {'desc': None, 'value': False}, 'img_size': {'desc': None, 'value': [640, 640]}, 'log_imgs': {'desc': None, 'value': 16}, 'save_dir': {'desc': None, 'value': 'runs/train/exp7'}, 'batch_size': {'desc': None, 'value': 128}, 'local_rank': {'desc': None, 'value': -1}, 'single_cls': {'desc': None, 'value': False}, 'world_size': {'desc': None, 'value': 1}, 'global_rank': {'desc': None, 'value': -1}, 'multi_scale': {'desc': None, 'value': False}, 'cache_images': {'desc': None, 'value': False}, 'noautoanchor': {'desc': None, 'value': False}, 'image_weights': {'desc': None, 'value': False}, 'log_artifacts': {'desc': None, 'value': False}, 'total_batch_size': {'desc': None, 'value': 128}}, 'resumed': True}
+2021-01-08 06:17:19,860 DEBUG   SenderThread:7671 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/b073040018/Machine_Learning/Mango/yolov5, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-01-08 06:17:19,878 DEBUG   SenderThread:7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-08 06:17:20,128 DEBUG   SenderThread:7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-08 06:17:20,138 INFO    SenderThread:7671 [dir_watcher.py:__init__():165] watching files in: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files
+2021-01-08 06:17:20,138 INFO    SenderThread:7671 [sender.py:_start_run_threads():490] run started: 128df853 with start time 1610056075
+2021-01-08 06:17:20,142 DEBUG   SenderThread:7671 [sender.py:send():90] send: summary
+2021-01-08 06:17:20,143 INFO    SenderThread:7671 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-08 06:17:20,144 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: run_start
+2021-01-08 06:17:20,160 DEBUG   HandlerThread:7671 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/b073040018/Machine_Learning/Mango/yolov5, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-01-08 06:17:20,172 DEBUG   HandlerThread:7671 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/b073040018/Machine_Learning/Mango/yolov5, universal_newlines=False, shell=None, istream=None)
+2021-01-08 06:17:20,253 DEBUG   SenderThread:7671 [sender.py:send():90] send: files
+2021-01-08 06:17:20,254 INFO    SenderThread:7671 [sender.py:_save_file():568] saving file wandb-metadata.json with policy now
+2021-01-08 06:17:20,264 DEBUG   Thread-11 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-08 06:17:20,265 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: status
+2021-01-08 06:17:20,265 DEBUG   SenderThread:7671 [sender.py:send():90] send: request
+2021-01-08 06:17:20,266 DEBUG   SenderThread:7671 [sender.py:send_request():99] send_request: status
+2021-01-08 06:17:20,270 DEBUG   SenderThread:7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-08 06:17:20,487 DEBUG   SenderThread:7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-08 06:17:20,507 DEBUG   Thread-11 :7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-08 06:17:20,514 DEBUG   Thread-11 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-08 06:17:20,891 DEBUG   Thread-11 :7671 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ernestchu/YOLOv5/128df853/wandb-metadata.json?Expires=1610116233&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=c144p5EHr4fYAvHkD43bneVmgwOt2Kczuehm824uoyK1lzjpyCWmJieQ4fbQ32Gp%2BFfunbfRdpT9fNmW9jQbg3BITqRqIuZkhLTJEaiJreeSfSx4yrt0jPXcFmKB2AOxxYGEfCF74E7F9VDb%2FXa5P9uFK%2BwFCDsIrfPYZypIeSHlrmBtGnTAQyxUbWGoXdIOC1sAH%2F5zFYldKH35Oh%2BZWP2GqgMejfewD%2BGC%2F061rkh7ax3bLTAsr65nbjqAdPnkZvroatK8gJ6amWnEvxXgC%2FrHXeexD7o0A%2FRMxNTTV%2FCvKQlvCl0wjvD75qrRIf0PJdcETu1dm8D0ihmHBuEioQ%3D%3D HTTP/1.1" 200 0
+2021-01-08 06:17:20,893 INFO    Thread-11 :7671 [upload_job.py:push():131] Uploaded file /tmp/tmpi8bwequowandb/3jcrqyl3-wandb-metadata.json
+2021-01-08 06:17:21,142 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_created():213] file/dir created: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:21,143 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_created():213] file/dir created: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/requirements.txt
+2021-01-08 06:17:21,144 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_created():213] file/dir created: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/wandb-metadata.json
+2021-01-08 06:17:22,139 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:23,734 DEBUG   SenderThread:7671 [sender.py:send():90] send: stats
+2021-01-08 06:17:26,121 DEBUG   SenderThread:7671 [sender.py:send():90] send: files
+2021-01-08 06:17:26,122 INFO    SenderThread:7671 [sender.py:_save_file():568] saving file media/images/Labels_71_0.jpg with policy now
+2021-01-08 06:17:26,123 DEBUG   SenderThread:7671 [sender.py:send():90] send: files
+2021-01-08 06:17:26,124 INFO    SenderThread:7671 [sender.py:_save_file():568] saving file media/images/Labels_71_1.jpg with policy now
+2021-01-08 06:17:26,127 DEBUG   SenderThread:7671 [sender.py:send():90] send: history
+2021-01-08 06:17:26,127 DEBUG   SenderThread:7671 [sender.py:send():90] send: summary
+2021-01-08 06:17:26,129 INFO    SenderThread:7671 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-08 06:17:26,138 DEBUG   Thread-12 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-08 06:17:26,148 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:26,148 DEBUG   Thread-13 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-08 06:17:26,150 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_created():213] file/dir created: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/media
+2021-01-08 06:17:26,367 DEBUG   Thread-12 :7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-08 06:17:26,374 DEBUG   Thread-12 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-08 06:17:26,388 DEBUG   Thread-13 :7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-08 06:17:26,395 DEBUG   Thread-13 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-08 06:17:27,029 DEBUG   Thread-12 :7671 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ernestchu/YOLOv5/128df853/media/images/Labels_71_0.jpg?Expires=1610116239&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=FkhcnQ722vToycmmrxTd2K5EkgElVn0Kx%2B2EDgTInqzgKErlpwYtnA5E%2BCw7Xlu%2BjI0FHi29AR5YS7ZZECdY9hSuqBs8AipDobng%2BOgdprPB7%2BzNYg4Vri%2FufHi9nbZmDs1V%2BGruMUhsFGq3xB1yzfJ8WkKv6ozJPud2nw%2BBmDv7OiKW0zvCXzGoXwL4jqWccas4D9jiz%2FUtgt5e%2BNF1fSJFNEvxcAZxOGRhNOKzUO6g4Acg%2BqT8h7DpvQwZMQ6vaVG93h7zes77d%2BJW9BU0D0hYfjpdxsrCWAmENHVv5tTyzi0g63TYtCX%2BjTtx2Jwmbd0BU4FUnG5kIr0nveEHgg%3D%3D HTTP/1.1" 200 0
+2021-01-08 06:17:27,031 INFO    Thread-12 :7671 [upload_job.py:push():131] Uploaded file /tmp/tmpi8bwequowandb/33nmtlxp-media/images/Labels_71_0.jpg
+2021-01-08 06:17:27,041 DEBUG   Thread-13 :7671 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ernestchu/YOLOv5/128df853/media/images/Labels_71_1.jpg?Expires=1610116239&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=lzmvypeJE%2FzoGJq0rYGKr413LtO2xGkVVAvIols1N3SNVxs28T2dL5roR1I3tFaSk8jSQNFjCFFgf1cfhadj4SJYBr7Cqf3AJc8AJhEfY82nSD0dB%2FcBnXyxnNR2tJxlc0WF01Nt0mqiqh%2FHDi9r0%2Bfy56QwkCzSBgcS7hyzppAN1rfBji0GaZkT7GqCNZqcDDRC%2FWx9i3hDf%2F0HsZt61XIvBt4qIdiwRH3b0uVj7s1chdgiUkJLNM26bFE%2BAEKOS8%2FmDRguiKunZOR8bO8fMQXDSbMftl5MYv%2FgFRTPWYmXKqkYyQoo6TRR%2BSlAG7WdAkz7SpFijwxG36yB8KX5QA%3D%3D HTTP/1.1" 200 0
+2021-01-08 06:17:27,044 INFO    Thread-13 :7671 [upload_job.py:push():131] Uploaded file /tmp/tmpi8bwequowandb/3v1tfwi2-media/images/Labels_71_1.jpg
+2021-01-08 06:17:27,148 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:28,371 DEBUG   SenderThread:7671 [sender.py:send():90] send: stats
+2021-01-08 06:17:32,152 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:32,969 DEBUG   SenderThread:7671 [sender.py:send():90] send: stats
+2021-01-08 06:17:33,153 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:34,153 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:35,154 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:35,261 DEBUG   SenderThread:7671 [sender.py:send():90] send: files
+2021-01-08 06:17:35,261 INFO    SenderThread:7671 [sender.py:_save_file():568] saving file media/images/Mosaics_72_0.jpg with policy now
+2021-01-08 06:17:35,262 DEBUG   SenderThread:7671 [sender.py:send():90] send: files
+2021-01-08 06:17:35,262 INFO    SenderThread:7671 [sender.py:_save_file():568] saving file media/images/Mosaics_72_1.jpg with policy now
+2021-01-08 06:17:35,263 DEBUG   SenderThread:7671 [sender.py:send():90] send: files
+2021-01-08 06:17:35,265 INFO    SenderThread:7671 [sender.py:_save_file():568] saving file media/images/Mosaics_72_2.jpg with policy now
+2021-01-08 06:17:35,266 DEBUG   SenderThread:7671 [sender.py:send():90] send: history
+2021-01-08 06:17:35,266 DEBUG   SenderThread:7671 [sender.py:send():90] send: summary
+2021-01-08 06:17:35,267 INFO    SenderThread:7671 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-08 06:17:35,276 DEBUG   Thread-14 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-08 06:17:35,284 DEBUG   Thread-15 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-08 06:17:35,292 DEBUG   Thread-16 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-08 06:17:35,499 DEBUG   Thread-14 :7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-08 06:17:35,503 DEBUG   Thread-14 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-08 06:17:35,508 DEBUG   Thread-15 :7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-08 06:17:35,515 DEBUG   Thread-15 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-08 06:17:35,518 DEBUG   Thread-16 :7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-08 06:17:35,525 DEBUG   Thread-16 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-08 06:17:35,531 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: status
+2021-01-08 06:17:35,532 DEBUG   SenderThread:7671 [sender.py:send():90] send: request
+2021-01-08 06:17:35,532 DEBUG   SenderThread:7671 [sender.py:send_request():99] send_request: status
+2021-01-08 06:17:35,537 DEBUG   SenderThread:7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-08 06:17:35,752 DEBUG   SenderThread:7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-08 06:17:36,152 DEBUG   Thread-15 :7671 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ernestchu/YOLOv5/128df853/media/images/Mosaics_72_1.jpg?Expires=1610116248&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=d1MkhmzfZXk89RyKnKBq0r5Fn6Mj%2FcqZXmZItia5WwIQtwEEb%2F6Me3E%2Bz22NsbB3Y4Q5IC8IdrtJaixINv9R5Az1zr%2FhPjKOJarsPERizVyLYBu0oYgX1idUG3ZcH%2BUKs7SFKMV6HYaLpBFTs9WpK5J%2BHfiO2TeZh%2B1zbHocy%2Fb2N99p9IzEQ0ngkY65qktxVfjM88dURIHl7b3%2BLv4fU8gjVWD3zbjhQGD09Ul6abTqf0p0dVGHeHI6XOT5rzYguOxUhDWsDJxqawXCxlLLA8cSzeEGqi0aiqfQZGvN6kX5Z8KUYSOHn%2BewV9ju2NwQkXW3O1dMMAKSUUwWv5%2BXtw%3D%3D HTTP/1.1" 200 0
+2021-01-08 06:17:36,154 DEBUG   Thread-14 :7671 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ernestchu/YOLOv5/128df853/media/images/Mosaics_72_0.jpg?Expires=1610116248&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=klkFZxAOy7USy1Uy9CnF0Bwff5tQESsahRG%2B0fOIleSdaTA5J3r%2FrP1KlSu5AOYMvspW4Oq%2FQBmHv9u48svJZWXoVkzXDihR5dJH68Axpd7RdC23HTmf4At1OlAB7kdRp3FnBCWbXzWJhMUcKUVd5zU1spJ%2FmizZ8xQ%2Bhdo3eopWweUH4r43VRjA7gfQiTL8%2B4i%2FXDKyZrekj0SMiyFnygupqRaKoFf1uLJu2dDBQDC7tdSLTktZE027LraQlGwLasLyG0H%2BZY0dgfdosi4lHwugEdmJadnfKeMIq7fxZ3BTJfPJZmGDOGSdMiyaHzxt5xiWD3TK4zoym%2B1GTqNakQ%3D%3D HTTP/1.1" 200 0
+2021-01-08 06:17:36,155 INFO    Thread-15 :7671 [upload_job.py:push():131] Uploaded file /tmp/tmpi8bwequowandb/3u8ycbar-media/images/Mosaics_72_1.jpg
+2021-01-08 06:17:36,158 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:36,158 INFO    Thread-14 :7671 [upload_job.py:push():131] Uploaded file /tmp/tmpi8bwequowandb/2m90gswu-media/images/Mosaics_72_0.jpg
+2021-01-08 06:17:36,194 DEBUG   Thread-16 :7671 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ernestchu/YOLOv5/128df853/media/images/Mosaics_72_2.jpg?Expires=1610116248&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=Mu1r%2BRooy%2FjOgRK%2BkO%2FCuzb%2FbQo2j6D3JwFo8qNQ7LcAjCaRBDxINS4eqKmLXilWVJlbvqIl7ORb9T1H1MWq2nACL5ZDcWRdPDhSlBoMuGSwCXHZxWTGNGLsKN5uPBcMSNbY75Rl66QWzhEkL4PpxKaFGbI%2FtCXLnwRdbzCMqWLUFuYw2yCaqCnv8fbCoaftwyHsCwkactf06oxijeytTOgN7t27QHEXF8cILuw6fa7uhIiA5EtdBK6aQgkOv%2B4lyipeUQdlXvNc0d8Zpp61IdSTfpKBvAO%2FRM4rPMoao3be071Gup3HSfWfwiS5kWUBaFiHhjZWF%2FPBr28SRzAkTw%3D%3D HTTP/1.1" 200 0
+2021-01-08 06:17:36,197 INFO    Thread-16 :7671 [upload_job.py:push():131] Uploaded file /tmp/tmpi8bwequowandb/li43io1h-media/images/Mosaics_72_2.jpg
+2021-01-08 06:17:37,159 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:37,551 DEBUG   SenderThread:7671 [sender.py:send():90] send: stats
+2021-01-08 06:17:38,160 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:39,161 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:40,161 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:41,162 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:42,128 DEBUG   SenderThread:7671 [sender.py:send():90] send: stats
+2021-01-08 06:17:42,163 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:43,164 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:44,165 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:45,166 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:46,167 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:46,711 DEBUG   SenderThread:7671 [sender.py:send():90] send: stats
+2021-01-08 06:17:47,170 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:48,170 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:49,171 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:50,171 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:50,757 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: status
+2021-01-08 06:17:50,758 DEBUG   SenderThread:7671 [sender.py:send():90] send: request
+2021-01-08 06:17:50,758 DEBUG   SenderThread:7671 [sender.py:send_request():99] send_request: status
+2021-01-08 06:17:50,765 DEBUG   SenderThread:7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-08 06:17:51,172 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:51,303 DEBUG   SenderThread:7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-08 06:17:51,307 DEBUG   SenderThread:7671 [sender.py:send():90] send: stats
+2021-01-08 06:17:51,312 DEBUG   Thread-5  :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-08 06:17:51,568 DEBUG   Thread-5  :7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/ernestchu/YOLOv5/128df853/file_stream HTTP/1.1" 200 None
+2021-01-08 06:17:52,173 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:53,174 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:54,175 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:55,176 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:55,870 DEBUG   SenderThread:7671 [sender.py:send():90] send: stats
+2021-01-08 06:17:56,177 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:57,178 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:58,179 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:17:59,179 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:00,180 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:00,448 DEBUG   SenderThread:7671 [sender.py:send():90] send: stats
+2021-01-08 06:18:01,181 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:02,182 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:03,183 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:04,184 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:05,026 DEBUG   SenderThread:7671 [sender.py:send():90] send: stats
+2021-01-08 06:18:05,185 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:06,186 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:06,309 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: status
+2021-01-08 06:18:06,310 DEBUG   SenderThread:7671 [sender.py:send():90] send: request
+2021-01-08 06:18:06,310 DEBUG   SenderThread:7671 [sender.py:send_request():99] send_request: status
+2021-01-08 06:18:06,315 DEBUG   SenderThread:7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-08 06:18:06,529 DEBUG   SenderThread:7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-08 06:18:07,187 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:08,187 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:09,188 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:09,603 DEBUG   SenderThread:7671 [sender.py:send():90] send: stats
+2021-01-08 06:18:10,189 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:11,190 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:12,191 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:13,192 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:14,180 DEBUG   SenderThread:7671 [sender.py:send():90] send: stats
+2021-01-08 06:18:14,193 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:15,193 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:16,194 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:17,195 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:18,196 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:18,756 DEBUG   SenderThread:7671 [sender.py:send():90] send: stats
+2021-01-08 06:18:19,197 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:20,198 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:21,199 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:21,534 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: status
+2021-01-08 06:18:21,534 DEBUG   SenderThread:7671 [sender.py:send():90] send: request
+2021-01-08 06:18:21,535 DEBUG   SenderThread:7671 [sender.py:send_request():99] send_request: status
+2021-01-08 06:18:21,539 DEBUG   SenderThread:7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-08 06:18:22,045 DEBUG   SenderThread:7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-08 06:18:22,200 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:23,200 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:23,332 DEBUG   SenderThread:7671 [sender.py:send():90] send: stats
+2021-01-08 06:18:23,550 DEBUG   Thread-5  :7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/ernestchu/YOLOv5/128df853/file_stream HTTP/1.1" 200 None
+2021-01-08 06:18:24,201 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:25,202 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:26,203 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:27,204 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:27,911 DEBUG   SenderThread:7671 [sender.py:send():90] send: stats
+2021-01-08 06:18:28,205 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:28,435 WARNING MainThread:7671 [internal.py:wandb_internal():117] Internal process interrupt: 1
+2021-01-08 06:18:28,448 DEBUG   SenderThread:7671 [sender.py:send():90] send: exit
+2021-01-08 06:18:28,448 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: poll_exit
+2021-01-08 06:18:28,448 INFO    SenderThread:7671 [sender.py:send_exit():168] handling exit code: 255
+2021-01-08 06:18:28,448 INFO    SenderThread:7671 [sender.py:send_exit():176] send defer
+2021-01-08 06:18:28,449 DEBUG   SenderThread:7671 [sender.py:send():90] send: request
+2021-01-08 06:18:28,449 DEBUG   SenderThread:7671 [sender.py:send_request():99] send_request: poll_exit
+2021-01-08 06:18:28,449 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: defer
+2021-01-08 06:18:28,449 INFO    HandlerThread:7671 [handler.py:handle_request_defer():69] handle defer: 0
+2021-01-08 06:18:28,450 DEBUG   SenderThread:7671 [sender.py:send():90] send: request
+2021-01-08 06:18:28,450 DEBUG   SenderThread:7671 [sender.py:send_request():99] send_request: defer
+2021-01-08 06:18:28,450 INFO    SenderThread:7671 [sender.py:send_request_defer():185] handle sender defer: 0
+2021-01-08 06:18:28,450 INFO    SenderThread:7671 [sender.py:send_request_defer():221] send defer: 1
+2021-01-08 06:18:28,450 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: defer
+2021-01-08 06:18:28,450 INFO    HandlerThread:7671 [handler.py:handle_request_defer():69] handle defer: 1
+2021-01-08 06:18:28,538 DEBUG   SenderThread:7671 [sender.py:send():90] send: request
+2021-01-08 06:18:28,538 DEBUG   SenderThread:7671 [sender.py:send_request():99] send_request: defer
+2021-01-08 06:18:28,538 INFO    SenderThread:7671 [sender.py:send_request_defer():185] handle sender defer: 1
+2021-01-08 06:18:28,538 INFO    SenderThread:7671 [sender.py:send_request_defer():221] send defer: 2
+2021-01-08 06:18:28,538 DEBUG   SenderThread:7671 [sender.py:send():90] send: stats
+2021-01-08 06:18:28,539 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: defer
+2021-01-08 06:18:28,540 INFO    HandlerThread:7671 [handler.py:handle_request_defer():69] handle defer: 2
+2021-01-08 06:18:28,540 DEBUG   SenderThread:7671 [sender.py:send():90] send: request
+2021-01-08 06:18:28,540 DEBUG   SenderThread:7671 [sender.py:send_request():99] send_request: defer
+2021-01-08 06:18:28,540 INFO    SenderThread:7671 [sender.py:send_request_defer():185] handle sender defer: 2
+2021-01-08 06:18:28,540 INFO    SenderThread:7671 [sender.py:send_request_defer():221] send defer: 3
+2021-01-08 06:18:28,541 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: defer
+2021-01-08 06:18:28,541 INFO    HandlerThread:7671 [handler.py:handle_request_defer():69] handle defer: 3
+2021-01-08 06:18:28,542 DEBUG   SenderThread:7671 [sender.py:send():90] send: summary
+2021-01-08 06:18:28,543 INFO    SenderThread:7671 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2021-01-08 06:18:28,543 DEBUG   SenderThread:7671 [sender.py:send():90] send: request
+2021-01-08 06:18:28,543 DEBUG   SenderThread:7671 [sender.py:send_request():99] send_request: defer
+2021-01-08 06:18:28,544 INFO    SenderThread:7671 [sender.py:send_request_defer():185] handle sender defer: 3
+2021-01-08 06:18:28,544 INFO    SenderThread:7671 [sender.py:send_request_defer():221] send defer: 4
+2021-01-08 06:18:28,544 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: defer
+2021-01-08 06:18:28,544 INFO    HandlerThread:7671 [handler.py:handle_request_defer():69] handle defer: 4
+2021-01-08 06:18:28,544 DEBUG   SenderThread:7671 [sender.py:send():90] send: request
+2021-01-08 06:18:28,545 DEBUG   SenderThread:7671 [sender.py:send_request():99] send_request: defer
+2021-01-08 06:18:28,545 INFO    SenderThread:7671 [sender.py:send_request_defer():185] handle sender defer: 4
+2021-01-08 06:18:28,545 INFO    SenderThread:7671 [dir_watcher.py:finish():279] shutting down directory watcher
+2021-01-08 06:18:29,206 INFO    Thread-8  :7671 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:29,207 INFO    SenderThread:7671 [dir_watcher.py:finish():309] scan: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files
+2021-01-08 06:18:29,208 INFO    SenderThread:7671 [dir_watcher.py:finish():315] scan save: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/config.yaml config.yaml
+2021-01-08 06:18:29,208 INFO    SenderThread:7671 [dir_watcher.py:finish():315] scan save: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/wandb-summary.json wandb-summary.json
+2021-01-08 06:18:29,216 DEBUG   Thread-17 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-08 06:18:29,217 INFO    SenderThread:7671 [dir_watcher.py:finish():315] scan save: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/requirements.txt requirements.txt
+2021-01-08 06:18:29,218 INFO    SenderThread:7671 [dir_watcher.py:finish():315] scan save: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/wandb-metadata.json wandb-metadata.json
+2021-01-08 06:18:29,218 INFO    SenderThread:7671 [dir_watcher.py:finish():315] scan save: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log output.log
+2021-01-08 06:18:29,224 DEBUG   Thread-18 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-08 06:18:29,232 DEBUG   Thread-19 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-08 06:18:29,238 DEBUG   Thread-20 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-01-08 06:18:29,239 INFO    SenderThread:7671 [dir_watcher.py:finish():315] scan save: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/media/images/Labels_71_0.jpg media/images/Labels_71_0.jpg
+2021-01-08 06:18:29,239 INFO    SenderThread:7671 [dir_watcher.py:finish():315] scan save: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/media/images/Labels_71_1.jpg media/images/Labels_71_1.jpg
+2021-01-08 06:18:29,239 INFO    SenderThread:7671 [dir_watcher.py:finish():315] scan save: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/media/images/Mosaics_72_0.jpg media/images/Mosaics_72_0.jpg
+2021-01-08 06:18:29,239 INFO    SenderThread:7671 [dir_watcher.py:finish():315] scan save: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/media/images/Mosaics_72_1.jpg media/images/Mosaics_72_1.jpg
+2021-01-08 06:18:29,240 INFO    SenderThread:7671 [dir_watcher.py:finish():315] scan save: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/media/images/Mosaics_72_2.jpg media/images/Mosaics_72_2.jpg
+2021-01-08 06:18:29,240 INFO    SenderThread:7671 [sender.py:send_request_defer():221] send defer: 5
+2021-01-08 06:18:29,241 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: defer
+2021-01-08 06:18:29,241 INFO    HandlerThread:7671 [handler.py:handle_request_defer():69] handle defer: 5
+2021-01-08 06:18:29,241 DEBUG   SenderThread:7671 [sender.py:send():90] send: request
+2021-01-08 06:18:29,242 DEBUG   SenderThread:7671 [sender.py:send_request():99] send_request: defer
+2021-01-08 06:18:29,242 INFO    SenderThread:7671 [sender.py:send_request_defer():185] handle sender defer: 5
+2021-01-08 06:18:29,242 INFO    SenderThread:7671 [file_pusher.py:finish():169] shutting down file pusher
+2021-01-08 06:18:29,242 INFO    SenderThread:7671 [sender.py:send_request_defer():221] send defer: 6
+2021-01-08 06:18:29,243 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: defer
+2021-01-08 06:18:29,243 INFO    HandlerThread:7671 [handler.py:handle_request_defer():69] handle defer: 6
+2021-01-08 06:18:29,244 DEBUG   SenderThread:7671 [sender.py:send():90] send: request
+2021-01-08 06:18:29,244 DEBUG   SenderThread:7671 [sender.py:send_request():99] send_request: defer
+2021-01-08 06:18:29,244 INFO    SenderThread:7671 [sender.py:send_request_defer():185] handle sender defer: 6
+2021-01-08 06:18:29,458 DEBUG   Thread-5  :7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/ernestchu/YOLOv5/128df853/file_stream HTTP/1.1" 200 None
+2021-01-08 06:18:29,462 DEBUG   Thread-17 :7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-08 06:18:29,463 DEBUG   Thread-19 :7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-08 06:18:29,467 DEBUG   Thread-18 :7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-08 06:18:29,473 DEBUG   Thread-19 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-08 06:18:29,474 DEBUG   Thread-20 :7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-01-08 06:18:29,478 DEBUG   Thread-17 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-08 06:18:29,483 DEBUG   Thread-18 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-08 06:18:29,486 DEBUG   Thread-20 :7671 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-01-08 06:18:29,656 DEBUG   Thread-5  :7671 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/ernestchu/YOLOv5/128df853/file_stream HTTP/1.1" 200 None
+2021-01-08 06:18:29,659 INFO    SenderThread:7671 [sender.py:send_request_defer():221] send defer: 7
+2021-01-08 06:18:29,659 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: defer
+2021-01-08 06:18:29,660 INFO    HandlerThread:7671 [handler.py:handle_request_defer():69] handle defer: 7
+2021-01-08 06:18:29,660 DEBUG   SenderThread:7671 [sender.py:send():90] send: request
+2021-01-08 06:18:29,660 DEBUG   SenderThread:7671 [sender.py:send_request():99] send_request: defer
+2021-01-08 06:18:29,660 INFO    SenderThread:7671 [sender.py:send_request_defer():185] handle sender defer: 7
+2021-01-08 06:18:29,660 INFO    SenderThread:7671 [sender.py:send_request_defer():221] send defer: 8
+2021-01-08 06:18:29,661 DEBUG   SenderThread:7671 [sender.py:send():90] send: final
+2021-01-08 06:18:29,662 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: defer
+2021-01-08 06:18:29,662 DEBUG   SenderThread:7671 [sender.py:send():90] send: footer
+2021-01-08 06:18:29,662 INFO    HandlerThread:7671 [handler.py:handle_request_defer():69] handle defer: 8
+2021-01-08 06:18:29,663 DEBUG   SenderThread:7671 [sender.py:send():90] send: request
+2021-01-08 06:18:29,663 DEBUG   SenderThread:7671 [sender.py:send_request():99] send_request: defer
+2021-01-08 06:18:29,663 INFO    SenderThread:7671 [sender.py:send_request_defer():185] handle sender defer: 8
+2021-01-08 06:18:29,821 DEBUG   Thread-19 :7671 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ernestchu/YOLOv5/128df853/requirements.txt?Expires=1610116302&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=irOHX%2F6mk4fmrY94qmHD3lTJKlwQpK%2Baad4jiMXu08bqH2scuyaEKg%2BrXZbCgvHbIOnbxPbBFSzs05t1%2Byawe3M7msl030k1iMdDqB8ZKgrrmy4KUNMtS%2FJnXxucSpGG1Om3SXSrLfoOl9ySZXcS1OnEuRvJBDIqnxiRoupDAkzsUC0H6NSuianC4FeCLo%2F4CgYu1%2BDg6KNLQ9cwgdkcgrKm293sK9%2BDLIVeFeikJXm142slxzmwVlkGMX9XT3cp9KeNpQz5m6x3aTScahmIKbFwkIVyTUt0J%2Fa2FDh9wtxR0XZt65ZQqWOkFU%2B737rUYdcoJiZLS%2FOLtqLG4aAmMg%3D%3D HTTP/1.1" 200 0
+2021-01-08 06:18:29,823 INFO    Thread-19 :7671 [upload_job.py:push():131] Uploaded file /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/requirements.txt
+2021-01-08 06:18:29,841 DEBUG   Thread-18 :7671 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ernestchu/YOLOv5/128df853/wandb-summary.json?Expires=1610116302&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=ZwxWeWTaPXR2ofXlI3GBIcA0AdyVIW0DDlIG%2BvrXZTEE1Xb2AaIDpxEP%2Fty9%2FEddqfTA5JrLiw4wcwWe8WuM3B3FBOox%2BXcL9Y5hPuj4QGyVSwvrq4%2FmYQ%2BNpP2dp%2FTUCZHql%2FchZO%2BtLWknLWUy%2BiiuMcaJAQTDd43eRUPNRI5RQuiktKewQsYBwqYxMShPnnydjWw0EhDdkidBhaxzg1a%2FD%2FOkifu3Q8w6SH8yqTSsxnTeIMfYVz0cXERLVaU97zTkkZS7MKfnNzpO4OvwwBPZFpuuKeDGUT5%2Fg4yfWXzpUcOvnam8R9Tqh1VaSDXyqQZyGz0KFC3mdjhCSHiZAg%3D%3D HTTP/1.1" 200 0
+2021-01-08 06:18:29,843 DEBUG   Thread-17 :7671 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ernestchu/YOLOv5/128df853/config.yaml?Expires=1610116302&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=W%2Bm8Ab8Z4xXUHlOBAE%2BcybQ%2F1j7XZCuevAls8Kt861fjDBG0khZqrd%2BJ2N0GKnIpxeeXYqeg5P%2FVhkdwLFniH%2BuZfS90mzDC%2FvLrvMtlyPzF%2BspPM%2Fo%2FFNjOhjNeTFD0qpPwJGBzSHLKSJp2lw55vM0BbboURgZdwE%2BXBAKtMM5SqW9cIi4GvA1ML68f5HLSPeVVFbKkkxTHk58JoKc8byj0o7K%2BKykE6J3YwXjCmbVcA4fiiQUEaRiOgI8sejOTlKsaQ7LshGDondl5Qsx7dY7323vKR9Wj6YLKkVtcwj3Q7f4rFebCCVcXqBLlcePsEGSrQdNnTehVqF5p0F3v7w%3D%3D HTTP/1.1" 200 0
+2021-01-08 06:18:29,844 INFO    Thread-18 :7671 [upload_job.py:push():131] Uploaded file /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/wandb-summary.json
+2021-01-08 06:18:29,846 INFO    Thread-17 :7671 [upload_job.py:push():131] Uploaded file /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/config.yaml
+2021-01-08 06:18:29,881 DEBUG   Thread-20 :7671 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ernestchu/YOLOv5/128df853/output.log?Expires=1610116302&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=DgyfKUS3TwUMtLlitml9RJDiy7pDMakP62cO8VyP1ah73evBMLifWz6Yq3MzbcpXFylOO6Jxo1ZB04DF3xEyITfDuMipO0bKmyi92IxnTPtCkdxecVqXq4BcK5MQC%2BAzEqiCTLjq3dqavUfMAWeEreEpMbU9LO%2FbxtKUfQy3WCuK2CRUpZI44cPGCuxsPLtL8QH35N%2BINLX20ELlFS11BAmwKRN%2B9AQ6jayT1CnbUJDQNLxKYsgiTos3r8RaZpDvXfmVSG7ciDE3x4ysf7tMQuKrbnihrrp4nZ896q3Ub%2FO09KQXtH9qNdf4gzWOWkXA8e3l4UjYTpx4ieY7FStv1A%3D%3D HTTP/1.1" 200 0
+2021-01-08 06:18:29,883 INFO    Thread-20 :7671 [upload_job.py:push():131] Uploaded file /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/files/output.log
+2021-01-08 06:18:30,454 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: poll_exit
+2021-01-08 06:18:30,454 DEBUG   SenderThread:7671 [sender.py:send():90] send: request
+2021-01-08 06:18:30,454 DEBUG   SenderThread:7671 [sender.py:send_request():99] send_request: poll_exit
+2021-01-08 06:18:30,454 INFO    SenderThread:7671 [file_pusher.py:join():174] waiting for file pusher
+2021-01-08 06:18:30,456 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: get_summary
+2021-01-08 06:18:30,459 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: sampled_history
+2021-01-08 06:18:30,460 DEBUG   HandlerThread:7671 [handler.py:handle_request():55] handle_request: shutdown
+2021-01-08 06:18:30,461 INFO    HandlerThread:7671 [handler.py:finish():271] shutting down handler
+2021-01-08 06:18:30,662 INFO    WriterThread:7671 [datastore.py:close():257] close: /home/b073040018/Machine_Learning/Mango/yolov5/wandb/run-20210108_061717-128df853/run-128df853.wandb
+2021-01-08 06:18:31,455 INFO    SenderThread:7671 [sender.py:finish():642] shutting down sender
+2021-01-08 06:18:31,455 INFO    SenderThread:7671 [file_pusher.py:finish():169] shutting down file pusher
+2021-01-08 06:18:31,455 INFO    SenderThread:7671 [file_pusher.py:join():174] waiting for file pusher
+2021-01-08 06:18:31,458 INFO    MainThread:7671 [internal.py:handle_exit():138] Internal process exited

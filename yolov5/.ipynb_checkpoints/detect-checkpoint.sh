@@ -1,0 +1,1 @@
+python3 mydetect.py --weights runs/train/exp/weights/best.pt --save-txt --img 640 --conf 0.20 --source ../mango_data/images/Test
